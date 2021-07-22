@@ -1,28 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 body {
-  margin: 0 auto;
-  max-width: 80vw;
-  font-size: 15px;
+  font-size: 12px;
   font-family: 'Cinzel', serif;
+  text-align: center;
+  margin: 0 auto;
 }
 .main-section {
   background-color: white;
 }
 .product {
-  display: inline-block;;
+  display: inline-block;
   border: 1px solid black;
   padding: 10px;
   text-align: center;
   box-sizing: border-box;
   margin: 5px;
-  width: 30%;
+
 }
 aside {
   display: inline-block;
   vertical-align: top;
-  width: 27%;
-
 }
 .product-image {
   max-width: 100%;
@@ -34,16 +32,16 @@ header h1 {
   display: inline-block;
 }
 .searchbar {
-  display: inline-block;
+  display: block;
 }
 header li {
   display: inline-block;
   padding: 0 2.5px;
 }
 main  {
- width: 67%;
+
  display: inline-block;
- padding: 0 30px;
+ padding-left: 30px;
  margin-bottom: 20px;
 }
 header {
@@ -61,7 +59,6 @@ a {
   text-decoration: none;
 }
 header h1 {
-  width: 60%;
   padding: 30px;
 }
 h2 {
@@ -80,8 +77,8 @@ aside li {
   padding: 5px 0;
 }
 .searchbar {
-  margin-left: 20px;
-  width: 15%;
+  margin: 0 auto;
+  width: 90%;
 }
 header a, footer a {
   color: white;
@@ -90,7 +87,7 @@ header a, footer a {
 .cart-button {
   background-color: #33ff33;
   color: white !important;
-  padding: 5px;
+  padding: 5px 0;
 
 }
 .product a {
@@ -101,58 +98,127 @@ a:hover {
 }
 .image-detail {
   float: left;
-  max-width: 40%;
   text-align: left;
+  padding: 2px;
 }
 .product-detail {
-  display: inline-block;;
   border: 1px solid black;
-  margin: 20px 0;
   box-sizing: border-box;
-  width: 60%;
-  text-align: center;
-  padding: 10px;
+
 }
 caption {
-  text-align: center;
   margin: 10px 0;
   padding: 10px;
   font-style: italic;
   font-weight: bold;
   border-bottom: 1px dotted black;
+  width: 80%;
+
 }
 table {
-  width: 400px;
   text-align: left;
   padding: 5px;
+  width: 80%;
 }
 td, th {
   padding: 5px;
 }
 .formdiv {
-  margin: 20px 0;
-  width: 600px;
+  width: 60%;
   text-align: left;
 }
 .input-c {
-  width: 350px;
-  height: 30px;
+  width: 80%;
 }
-.input-label {
-  margin-right: 20px;
+
 }
-#name {
-  margin-left: 20px;
-}
+
 #email {
-  margin-left: 20px;
+  margin-left: 1em;
 }
-.buttons {
-  margin: 10px 5px;
 }
 textarea {
   height: 70px !important;
 }
 td:hover, th:hover {
   background-color: rgba(230, 230, 230, 0.5);
+}
+.main-detail {
+  padding: 1.5em;
+  text-align: center;
+}
+@media  (min-width:620px){
+  .product {
+  width:40%;
+}
+}
+@media (min-width:800px) {
+  main {
+    width: 60%;
+  }
+  aside {
+    width: 22%;
+    text-align: left
+  }
+  .searchbar {
+    display: inline-block;
+    width: 20%;
+    margin-left: 3em;
+  }
+  header h1 {
+    width: 40%;
+  }
+ .product-detail {
+   width:80%;
+ }
+}
+@media (min-width:1070px) {
+    body {
+      max-width: 80vw;
+      text-align: left;
+      margin: auto;
+    }
+    main {
+      width: 67%;
+    }
+    .product {
+      width: 30%;
+    }
+    aside {
+      display: inline-block;
+      width: 25%;
+    }
+    .searchbar {
+      width: 20%;
+    }
+}
+@media (min-width:0px) {
+    .image-detail {
+        max-width: 40%;
+    }
+    .cart-button {
+      padding: 0px;
+    }
+    #body-contact {
+      text-align: left;
+    }
+    #main-contact {
+      padding-left: 15px;
+    }
+    .product-detail {
+      width: 100%;
+    }
+}
+
+@media (min-width:500px) {
+  .image-detail {
+    max-width: 30%;
+  }
+
+}
+@media (min-width:275px) {
+  .input-label {
+    margin-right: 1em;
+  }
+
 }
