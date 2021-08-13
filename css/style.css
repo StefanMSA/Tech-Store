@@ -191,6 +191,15 @@ td:hover, th:hover {
     .searchbar {
       width: 20%;
     }
+    .image-detail {
+      width: 25%;
+    }
+    #name {
+      margin-left: 15px;
+    }
+    #email {
+      margin-left: 15px;
+    }
 }
 @media (min-width:0px) {
     .image-detail {
